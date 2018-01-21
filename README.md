@@ -7,6 +7,8 @@ There are three files available:
 - users_log.csv
 - members.csv
 
+
+
 It is recomended to have Python 3 installed. Not sure if this code will break with Python 2.x
 
 ### Create a virtual environment (Optional but recommended)
