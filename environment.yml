@@ -12,3 +12,4 @@ dependencies:
   - seaborn
   - tqdm
   - watermark
+  - ipykernel
