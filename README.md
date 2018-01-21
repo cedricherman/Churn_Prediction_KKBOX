@@ -24,7 +24,7 @@ If you have the Anaconda distribution of **Python 3** installed, then run the co
 - From your console:
     - `\usr> (sudo) pip install virtualenv`
     - `\usr> virtualenv -p python3 kkbox_churn`
-    - `\usr> source blackfriday/bin/activate`
+    - `\usr> source kkbox_churn/bin/activate`
 - `\usr> pip install -r requirements.txt`
 
 
