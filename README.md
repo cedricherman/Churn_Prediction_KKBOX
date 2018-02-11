@@ -5,7 +5,7 @@ First of all, it is important to explore data made available to us.
 There are three files available:
 - transactions.csv, see [EDA_Transactions](https://github.com/cedricherman/Churn_Prediction_KKBOX/blob/master/notebooks/KKBOX_Data_Exploration_Transactions.ipynb)
 - users_log.csv, see [EDA_UserLog](https://github.com/cedricherman/Churn_Prediction_KKBOX/blob/master/notebooks/KKBOX_Data_Exploration_UserLog.ipynb)
-- members.csv
+- members.csv (to be updated)
 
 
 
