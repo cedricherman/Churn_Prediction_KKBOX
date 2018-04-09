@@ -7,9 +7,16 @@ There are three files available:
 - users_log.csv, see [EDA_UserLog](https://github.com/cedricherman/Churn_Prediction_KKBOX/blob/master/notebooks/KKBOX_Data_Exploration_UserLog.ipynb)
 - members.csv (to be updated)
 
+Second, features are engineered based on users listening habits and transactions history:
+- [Here](https://github.com/cedricherman/Churn_Prediction_KKBOX/blob/master/notebooks/KKBox_FeatureEng_UserLog_SongLength.ipynb) the average number of songs played over a month for the last 6 months is computed for each
+song length percentile (25%,50%,75%,98.5%,100%) and intervals.
+- [Similarly](https://github.com/cedricherman/Churn_Prediction_KKBOX/blob/master/notebooks/KKBox_FeatureEng_UserLog_UniqueSong.ipynb), the average number of unique songs played on a monthly basis is derived. 
+- [Additionally](https://github.com/cedricherman/Churn_Prediction_KKBOX/blob/master/notebooks/KKBox_FeatureEng_UserLog_TotalSeconds.ipynb), daily listening time in second averaged on a monthly basis is calculated.
 
 
-It is recomended to have Python 3 installed. Not sure if this code will break with Python 2.x
+
+
+It is recomended to have Python 3 installed. This code may break with Python 2.x
 
 ### Create a virtual environment (Optional but recommended)
 It is common practice to keep your current Root Python environment clean and create a new environment for a new study/project.
