@@ -3,15 +3,19 @@ Churn prediction for music streaming service.
 
 First of all, it is important to explore data made available to us.
 There are three files available:
+
 - transactions.csv, see [EDA_Transactions](https://github.com/cedricherman/Churn_Prediction_KKBOX/blob/master/notebooks/KKBOX_Data_Exploration_Transactions.ipynb)
 - users_log.csv, see [EDA_UserLog](https://github.com/cedricherman/Churn_Prediction_KKBOX/blob/master/notebooks/KKBOX_Data_Exploration_UserLog.ipynb)
-- members.csv (to be updated)
+- members.csv (small data set, not taken into account at this time)
 
 Second, features are engineered based on users listening habits and transactions history:
+
 - [Here](https://github.com/cedricherman/Churn_Prediction_KKBOX/blob/master/notebooks/KKBox_FeatureEng_UserLog_SongLength.ipynb) the average number of songs played over a month for the last 6 months is computed for each
 song length percentile (25%,50%,75%,98.5%,100%) and intervals.
 - [Similarly](https://github.com/cedricherman/Churn_Prediction_KKBOX/blob/master/notebooks/KKBox_FeatureEng_UserLog_UniqueSong.ipynb), the average number of unique songs played on a monthly basis is derived. 
 - [Additionally](https://github.com/cedricherman/Churn_Prediction_KKBOX/blob/master/notebooks/KKBox_FeatureEng_UserLog_TotalSeconds.ipynb), daily listening time in second averaged on a monthly basis is calculated.
+- [last](https://github.com/cedricherman/Churn_Prediction_KKBOX/blob/master/notebooks/KKBox_FeatureEng_Transactions.ipynb), there are interesting features we can derive based on transaction history such as number of uninterrupted days of membership and ratio of active cancellation for instance.
+
 
 
 
