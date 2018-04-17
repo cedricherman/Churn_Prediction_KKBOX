@@ -1,5 +1,7 @@
 # Churn_Prediction_KKBOX
-Churn prediction for music streaming service.
+Music Streaming Provider Churn Prediction.
+"Should I stay or should I go?"
+
 
 First of all, it is important to explore data made available to us.
 There are three files available:
@@ -7,6 +9,7 @@ There are three files available:
 - transactions.csv, see [EDA_Transactions](https://github.com/cedricherman/Churn_Prediction_KKBOX/blob/master/notebooks/KKBOX_Data_Exploration_Transactions.ipynb)
 - users_log.csv, see [EDA_UserLog](https://github.com/cedricherman/Churn_Prediction_KKBOX/blob/master/notebooks/KKBOX_Data_Exploration_UserLog.ipynb)
 - members.csv (not taken into account at this time)
+
 
 Second, features are engineered based on users listening habits and transactions history:
 
