@@ -1,15 +1,16 @@
 1) Regenerate activities based on weekends and weekdays in addition to total or sum.
-That will double the number of num_X and cumu_x
+That will double the number of num_X and cum_x
 (Keep in mind I'm only considering the past 6 months, well 5 months because you don't count activity
 of the month you're making prediction, but I have up to 26 months)
 
-2) Add percentage of unique songs played for each month (cumu100 is the total number of songs played)
+2) Add percentage of unique songs played for each month (cum_100 is the total number of songs played)
 
 3) Can have boolean like did user change of plan in the past month? 2 months? 3 months?
 
 4) For song count per month, most of the time, if it is zero it means user didn't have a membership.
-It doesn't mean he wasn't active. Is that a problem? If yes, how to tackle it.
+It doesn't mean he wasn't active. Is that a problem? yes. We could have a boolean saying does this user
+have a membership for each month.
+Song count should be normalized by number of days user had a membership during that month.
 
 5) Take into account holidays! (external data). There is always a drop during chinese new year.
-
 
