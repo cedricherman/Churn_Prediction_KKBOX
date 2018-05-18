@@ -12,5 +12,10 @@ It doesn't mean he wasn't active. Is that a problem? yes. We could have a boolea
 have a membership for each month.
 Song count should be normalized by number of days user had a membership during that month.
 
+OR
+
+Just normalize by the number of active days in that month (easier to implement too!)
+and add percent change from month to month
+
 5) Take into account holidays! (external data). There is always a drop during chinese new year.
 
