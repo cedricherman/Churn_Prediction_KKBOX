@@ -2,27 +2,27 @@
 Music Streaming Provider Churn Prediction.
 "Should I stay or should I go?"
 
-For a quick introduction to this churn prediction problem, see this [notebook](https://github.com/cedricherman/Churn_Prediction_KKBOX/blob/master/notebooks/KKBOX_Introduction_01.ipynb).
+For a quick introduction to this churn prediction problem, see this [notebook](https://github.com/cedricherman/Churn_Prediction_KKBOX/blob/master/notebooks/01_KKBOX_Introduction.ipynb).
 
 
 First of all, it is important to explore data made available to us.
 There are three files available:
 
-- transactions.csv, see [EDA_Transactions](https://github.com/cedricherman/Churn_Prediction_KKBOX/blob/master/notebooks/KKBOX_Data_Exploration_Transactions_02.ipynb)
-- users_log.csv, see [EDA_UserLog](https://github.com/cedricherman/Churn_Prediction_KKBOX/blob/master/notebooks/KKBOX_Data_Exploration_UserLog_03.ipynb)
+- transactions.csv, see [EDA_Transactions](https://github.com/cedricherman/Churn_Prediction_KKBOX/blob/master/notebooks/02_KKBOX_Data_Exploration_Transactions.ipynb)
+- users_log.csv, see [EDA_UserLog](https://github.com/cedricherman/Churn_Prediction_KKBOX/blob/master/notebooks/03_KKBOX_Data_Exploration_UserLog.ipynb)
 - members.csv (not taken into account at this time)
 
 
 Second, features are engineered based on users listening habits and transactions history:
 
-- [Here](https://github.com/cedricherman/Churn_Prediction_KKBOX/blob/master/notebooks/KKBox_FeatureEng_UserLog_SongLength_04.ipynb) the average number of songs played over a month for the last 6 months is computed for each
+- [Here](https://github.com/cedricherman/Churn_Prediction_KKBOX/blob/master/notebooks/04_KKBox_FeatureEng_UserLog_SongLength.ipynb) the average number of songs played over a month for the last 6 months is computed for each
 song length percentile (25%,50%,75%,98.5%,100%) and intervals.
-- [Similarly](https://github.com/cedricherman/Churn_Prediction_KKBOX/blob/master/notebooks/KKBox_FeatureEng_UserLog_UniqueSong_05.ipynb), the average number of unique songs played on a monthly basis is derived. 
-- [Additionally](https://github.com/cedricherman/Churn_Prediction_KKBOX/blob/master/notebooks/KKBox_FeatureEng_UserLog_TotalSeconds_06.ipynb), daily listening time in second averaged on a monthly basis is calculated.
-- [Last](https://github.com/cedricherman/Churn_Prediction_KKBOX/blob/master/notebooks/KKBox_FeatureEng_Transactions_07.ipynb), there are interesting features we can derive based on transaction history such as number of uninterrupted days of membership and ratio of active cancellation for instance.
+- [Similarly](https://github.com/cedricherman/Churn_Prediction_KKBOX/blob/master/notebooks/05_KKBox_FeatureEng_UserLog_UniqueSong.ipynb), the average number of unique songs played on a monthly basis is derived. 
+- [Additionally](https://github.com/cedricherman/Churn_Prediction_KKBOX/blob/master/notebooks/06_KKBox_FeatureEng_UserLog_TotalSeconds.ipynb), daily listening time in second averaged on a monthly basis is calculated.
+- [Last](https://github.com/cedricherman/Churn_Prediction_KKBOX/blob/master/notebooks/07_KKBox_FeatureEng_Transactions.ipynb), there are interesting features we can derive based on transaction history such as number of uninterrupted days of membership and ratio of active cancellation for instance.
 
 
-[Finally](https://github.com/cedricherman/Churn_Prediction_KKBOX/blob/master/notebooks/KKBOX_Model_Building_08.ipynb), we are evaluating our Features on a Logistic Regression model using Lasso regularization. Because of class imbalance 
+[Finally](https://github.com/cedricherman/Churn_Prediction_KKBOX/blob/master/notebooks/08_KKBOX_Model_Building.ipynb), we are evaluating our Features on a Logistic Regression model using Lasso regularization. Because of class imbalance 
 between churn and no churn, we are using SMOTE upsampling method. We will see that people who have long membership are most likely to churn. In addition, KKBOX should be watching closely users whose membership expired following an active cancellation. Also engagement messages should be sent to users with a continuous drop in song played count (no matter how long each song was played).
 
 
