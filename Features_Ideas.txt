@@ -19,3 +19,7 @@ and add percent change from month to month
 
 5) Take into account holidays! (external data). There is always a drop during chinese new year.
 
+
+6) knowing monthly percentage changes, sum pct change in past 2 month, 3 month, 4 month, ...
+
+7) percent change from month M to M-2,M-3,M-4, ... in addition to one month to the next
