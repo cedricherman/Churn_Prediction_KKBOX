@@ -9,10 +9,10 @@ First of all, it is important to explore data made available to us.
 There are three files available:
 
 - transactions.csv, see [EDA_Transactions](https://github.com/cedricherman/Churn_Prediction_KKBOX/blob/master/notebooks/02_Transactions_EDA_Pandas.ipynb)
-- users_log.csv, activity log is ~30GB so a postgresSQL database has been created here,see [EDA_UserLog_DB](https://github.com/cedricherman/Churn_Prediction_KKBOX/blob/master/notebooks/03b_UserActivity_EDA_DB.ipynb) for user
-engagement and 
+- users_log.csv, activity log is ~30GB so a postgresSQL database has been created [here](https://github.com/cedricherman/Churn_Prediction_KKBOX/blob/master/notebooks/03a_UserActivity_Create_DB.ipynb), see [EDA_UserLog_DB](https://github.com/cedricherman/Churn_Prediction_KKBOX/blob/master/notebooks/03b_UserActivity_EDA_DB.ipynb) for user
+engagement plot and 
 [EDA_UserLog_Pandas](https://github.com/cedricherman/Churn_Prediction_KKBOX/blob/master/notebooks/03b_UserActivity_EDA_Pandas.ipynb)
-for comparison with Pandas (much slower than Postgres)
+for a complete data exploration using Pandas (Note that PostgreSQL is preferred)
 - members.csv (not taken into account at this time)
 
 
